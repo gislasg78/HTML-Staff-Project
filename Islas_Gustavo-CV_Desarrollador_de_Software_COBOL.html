@@ -12,6 +12,17 @@
 			&quot;Islas,&nbsp;Gustavo&nbsp;&mdash;&nbsp;Desarrollador&nbsp;de&nbsp;Software&nbsp;Mainframe&quot;
 		</title>
 
+		<script>
+			function showGreeting()
+				{
+					var txt_first_name = document.getElementById("txt_first_name").value;
+					var p_greeting = document.getElementById("p_greeting");
+
+					p_greeting.textContent = "¡Hola, " + txt_first_name + "! ¿Cómo estás?";
+					alert(p_greeting.textContent);
+				}
+		</script>
+
 		<style>
 			body
 				{
@@ -542,7 +553,9 @@
 				<form>
 					<fieldset>
 						<legend title="Comunicarse conmigo">Contacto</legend>
-						<input type="submit" value="Hablemos!" title="Pulse aquí si requiere más información">
+						<input type="text" id="txt_first_name" placeholder="Ingrese su nombre" title="Introduzca su nombre">
+						<input type="submit" onclick="showGreeting()" title="Pulse aquí si requiere más información" value="Saludar">
+						<p id="p_greeting"></p>
 					</fieldset>
 				</form>
 			</footer>
