@@ -16,10 +16,18 @@
 			function showGreeting()
 				{
 					var txt_first_name = document.getElementById("txt_first_name").value;
-					var p_greeting = document.getElementById("p_greeting");
+					var prg_greeting = document.getElementById("prg_greeting");
+					var textContentParagraph = "¡Hola, " + txt_first_name + "! ¿Cómo estás?";
 
-					p_greeting.textContent = "¡Hola, " + txt_first_name + "! ¿Cómo estás?";
-					alert(p_greeting.textContent);
+					prg_greeting.textContent = textContentParagraph;
+				}
+
+			function showNotice()
+				{
+					var txt_first_name = document.getElementById("txt_first_name").value;
+					var textContentParagraph = "¡Gracias, " + txt_first_name + "! El formulario ha sido enviado.";
+
+					alert(textContentParagraph);
 				}
 		</script>
 
@@ -553,9 +561,13 @@
 				<form>
 					<fieldset>
 						<legend title="Comunicarse conmigo">Contacto</legend>
+						<label for="txt_first_name" title="Proporcione su nombre">Nombre:&nbsp;</label>
 						<input type="text" id="txt_first_name" placeholder="Ingrese su nombre" title="Introduzca su nombre">
-						<input type="submit" onclick="showGreeting()" title="Pulse aquí si requiere más información" value="Saludar">
-						<p id="p_greeting"></p>
+
+						<br><br>
+						<button onclick="showGreeting()" title="Presione aquí si requiere más información">Saludar</button>
+						<input type="submit" onclick="showNotice()" title="Pulse aquí para enviar el formulario" value="Enviar">
+						<p id="prg_greeting"></p>
 					</fieldset>
 				</form>
 			</footer>
