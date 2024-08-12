@@ -16,16 +16,7 @@
 			function showGreeting()
 				{
 					var txt_first_name = document.getElementById("txt_first_name").value;
-					var prg_greeting = document.getElementById("prg_greeting");
-					var textContentParagraph = "¡Hola, " + txt_first_name + "! ¿Cómo estás?";
-
-					prg_greeting.textContent = textContentParagraph;
-				}
-
-			function showNotice()
-				{
-					var txt_first_name = document.getElementById("txt_first_name").value;
-					var textContentParagraph = "¡Gracias, " + txt_first_name + "! El formulario ha sido enviado.";
+					var textContentParagraph = "¡Muchas Gracias, " + txt_first_name + " por tu interés en mi perfil profesional!";
 
 					alert(textContentParagraph);
 				}
@@ -148,7 +139,7 @@
 					</div>
 
 					<p>
-						Experto en <b>COBOL</b>, <b>CICS</b>, <b>DB2</b>, <b>IMS</b> y <b>MQ</b>. Capaz de diseñar, desarrollar y mantener aplicaciones de alto rendimiento, disponibilidad y seguridad. Participé en proyectos de migración de datos de <b>IMS</b> a <b>MQ</b>, logrando reducir los costes operativos y mejorar la eficiencia. Busco una oportunidad <b>100% remota</b> (<i>virtual</i>) para seguir aprendiendo y aportar valor a una empresa innovadora y comprometida con la calidad de servicios diversificados en <b>TI</b>.
+						Experto en <b>COBOL</b>, <b>CICS</b>, <b>DB2</b>, <b>IMS</b> y <b>MQ</b>. Capaz de diseñar, desarrollar y mantener aplicaciones de alto rendimiento, disponibilidad y seguridad. Participé en proyectos de migración de datos de <b>IMS</b> a <b>MQ</b>, logrando reducir los costes operativos y mejorar la eficiencia. Busco una oportunidad <b>100% remota</b> (<i>virtual</i>) o un esquema h&iacute;brido (<i>con mayor carga remota</i>), para seguir aprendiendo y aportar valor a una empresa innovadora y comprometida con la calidad de servicios diversificados en <b>TI</b>.
 					</p>
 				</div>
 
@@ -169,7 +160,7 @@
 
 					<div class="list-item">
 						<section>
-							<h3>Desarrollador&nbsp;Freelancer&nbsp;Mainframe&nbsp;&#124;&nbsp;Fiver Profile Freelance&nbsp;&#124;&nbsp;Enero 2017&nbsp;&mdash;&nbsp;Actualidad</h3>
+							<h3>Desarrollador&nbsp;de&nbsp;Software&nbsp;Financiero&nbsp;Freelancer&nbsp;Mainframe&nbsp;&#124;&nbsp;Fiver Profile Freelance&nbsp;&#124;&nbsp;Enero 2017&nbsp;&mdash;&nbsp;Actualidad</h3>
 							<ul>
 								<li><b>Desarrollo de Aplicaciones.</b></li>
 								<li class="nested-list">
@@ -480,7 +471,7 @@
 									<li><b><i>Procesamiento por lotes.</i></b></li>
 									<li class="nested-list">
 										<ul>
-											<li>Abend-Aid,&nbsp;ALTAMIRA,&nbsp;CHANGE MAN,&nbsp;CLIST,&nbsp;CTRL+D,&nbsp;CTRL+M,&nbsp;CTRL+R,&nbsp;ENDEAVOR,&nbsp;FILE-AID,&nbsp;IAM Files,&nbsp;ISPF,&nbsp;JES,&nbsp;JCL,&nbsp;MQ,&nbsp;MVS,&nbsp;Omegamon,&nbsp;QMF,&nbsp;SDSF,&nbsp;SMART TEST,&nbsp;SPUFI,&nbsp;VSAM,&nbsp;XPEDITER&nbsp;(<i>batch&nbsp;debbuger</i>).</li>
+											<li>Abend&mdash;Aid,&nbsp;ALTAMIRA,&nbsp;CHANGE MAN,&nbsp;CLIST,&nbsp;CTRL+D,&nbsp;CTRL+M,&nbsp;CTRL+R,&nbsp;ENDEAVOR,&nbsp;FILE&mdash;AID,&nbsp;IAM&nbsp;Files,&nbsp;ISPF,&nbsp;JES,&nbsp;JCL,&nbsp;MQ,&nbsp;MVS,&nbsp;Omegamon,&nbsp;QMF,&nbsp;SDSF,&nbsp;SMART TEST,&nbsp;SPUFI,&nbsp;VSAM,&nbsp;XPEDITER&nbsp;(<i>batch&nbsp;debbuger</i>).</li>
 										</ul>
 									</li>
 
@@ -566,14 +557,10 @@
 			<footer>
 				<form>
 					<fieldset>
-						<legend title="Comunicarse conmigo">Contacto</legend>
-						<label for="txt_first_name" title="Proporcione su nombre">Nombre:&nbsp;</label>
-						<input type="text" id="txt_first_name" placeholder="Ingrese su nombre" title="Introduzca su nombre">
-
-						<br><br>
-						<button onclick="showGreeting()" title="Presione aquí si requiere más información">Saludar</button>
-						<input type="submit" onclick="showNotice()" title="Pulse aquí para enviar el formulario" value="Enviar">
-						<p id="prg_greeting"></p>
+						<legend title="Comunicarse conmigo">Contactarme</legend>
+						<label for="txt_first_name" title="Proporcione su nombre completo">Nombre:&nbsp;</label>
+						<input type="text" id="txt_first_name" placeholder="Ingrese su nombre" title="Introduzca su nombre" required>
+						<button onclick="showGreeting()" title="Presione aquí si requiere contactarme">Saludar</button>
 					</fieldset>
 				</form>
 			</footer>
